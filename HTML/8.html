@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #name {
+        color: crimson;
+        background-color: rgb(182, 159, 204);
+        border: 2px solid blue;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="submit" onclick="displayResult()">Change Data</button>
+    <div id="name">
+      <h1>Aayush Sharma</h1>
+    </div>
+
+    <script>
+      function displayResult() {
+        document.getElementById("name").innerHTML = "Have a nice day!";
+      }
+    </script>
+  </body>
+</html>
