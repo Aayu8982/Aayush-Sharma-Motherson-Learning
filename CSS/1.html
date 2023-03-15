@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selecters</title>
+    <style>
+      /* The CSS Universal Selector */
+      * {
+        background-color: darkorange;
+      }
+      /* class */
+      .name {
+        text-align: center;
+        font-size: xx-large;
+      }
+
+      /* Tagname */
+      h2 {
+        color: aqua;
+        background-color: black;
+      }
+
+      /* using ID */
+      #description {
+        color: blueviolet;
+        font-style: italic;
+      }
+
+      /* You can also specify that only specific HTML elements should be affected by a class. */
+      p.center {
+        text-align: center;
+      }
+
+      p.demo {
+        color: cadetblue;
+      }
+
+      p.dummy {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background-color: chartreuse;
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Basics Selecters -->
+    <h1 class="name">Aayush Sharma</h1>
+    <h2>HomeTown : Ratlam</h2>
+    <p id="description">Lorem ipsum dolor sit amet.</p>
+    <p class="center">I am groot</p>
+
+    <hr />
+    <hr />
+
+    <h1 class="demo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+      dignissimos.
+    </h1>
+    <p class="demo">Lorem ipsum dolor sit amet.</p>
+    <p class="demo dummy">
+      Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+  </body>
+</html>

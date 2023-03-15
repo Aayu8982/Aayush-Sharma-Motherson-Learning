@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        margin: 0 0 50px 0;
+      }
+
+      h2 {
+        margin: 20px 0 0 0;
+      }
+
+      .demo {
+        width: 900px;
+        margin: auto;
+        /* padding: 100px 200px; */
+        padding: 10% 20%;
+        border: 4px solid black;
+        color: blueviolet;
+        background-color: yellow;
+      }
+
+      .demo2 {
+        padding: 25px 50px 75px;
+        border: 2px solid black;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In this example the h1 element has a bottom margin of 
+        50px and the h2 element has a top margin of 20px. So, 
+        the vertical margin between h1 and h2 should have been 70px (50px + 20px).
+         However, due to margin collapse, the actual margin ends up being 50px. -->
+    <h1>Aayush Sharma</h1>
+    <h2>Aayush Sharma</h2>
+
+    <div class="demo">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nihil
+        at natus nostrum minima quisquam amet quae sit quas fuga.
+      </h2>
+    </div>
+
+    <div class="demo2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti
+      sunt commodi repudiandae assumenda aut sit nesciunt iste quis animi!
+    </div>
+  </body>
+</html>

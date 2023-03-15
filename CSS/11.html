@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+      }
+
+      .t1 {
+        text-decoration-line: overline;
+        text-decoration-color: blueviolet;
+      }
+
+      .t2 {
+        text-decoration-line: underline;
+        text-decoration-color: rgb(43, 168, 226);
+      }
+
+      .t3 {
+        text-decoration-line: line-through;
+        text-decoration-color: rgb(216, 30, 16);
+        text-decoration-style: double;
+      }
+
+      .t4 {
+        text-decoration-line: overline underline;
+        text-decoration-color: rgb(136, 172, 79);
+        text-decoration-style: wavy;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Text Direction -> The direction and unicode-bidi properties can be used to change the text direction of an element: -->
+    <h1 class="demo">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, at
+    </h1>
+
+    <h2>
+      This is <button style="vertical-align: baseline">Aayush</button> Sharma, I
+      am from Ratlam
+    </h2>
+    <h2>
+      This is <button style="vertical-align: bottom">Aayush</button> Sharma, I
+      am from Ratlam
+    </h2>
+    <h2>
+      This is
+      <button style="vertical-align: text-bottom">Aayush</button> Sharma, I am
+      from Ratlam
+    </h2>
+
+    <hr />
+    <h1 style="text-align: center">Text Decoration</h1>
+
+    <h1 class="t1">Lorem ipsum dolor sit amet.</h1>
+    <h1 class="t2">Lorem ipsum dolor sit amet.</h1>
+    <h1 class="t3">Lorem ipsum dolor sit amet.</h1>
+    <h1 class="t4">Lorem ipsum dolor sit amet.</h1>
+
+    <a href="http://google.com" style="text-decoration: none"
+      >Welcome to Google, Using text-decoration none</a
+    >
+
+    <hr />
+
+    <h1 style="text-align: center">Text Transformation</h1>
+    <h1 style="text-transform: capitalize">Lorem ipsum dolor sit amet.</h1>
+    <h1 style="text-transform: lowercase">Lorem Ipsum Dolor Sit Amet.</h1>
+    <h1 style="text-transform: uppercase">Lorem ipsum dolor sit amet.</h1>
+  </body>
+</html>
