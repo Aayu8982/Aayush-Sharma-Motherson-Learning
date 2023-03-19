@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <style>
+    img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+    }
+    h1,
+    p {
+      color: rgb(231, 80, 20);
+      font-size: xx-large;
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .box-1 {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      background: yellow;
+      border: 2px solid black;
+      left: 50px;
+      z-index: 4;
+    }
+    .box-2 {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      background: rgb(191, 12, 134);
+      border: 2px solid black;
+      z-index: 3;
+    }
+    .box-3 {
+      position: fixed;
+      height: 200px;
+      width: 200px;
+      background: rgb(13, 13, 190);
+      border: 2px solid black;
+      z-index: 2;
+      left: 300px;
+    }
+    .box-4 {
+      position: sticky;
+      height: 200px;
+      width: 200px;
+      background: rgb(227, 11, 11);
+      border: 2px solid black;
+      top: 100px;
+      z-index: 2;
+    }
+
+    .demo {
+      background: yellow;
+      color: black;
+      height: 300px;
+      width: auto;
+      border: 2px solid red;
+      overflow: scroll;
+    }
+  </style>
+  <body>
+    /* The z-index Property When elements are positioned, they can overlap other
+    elements. The z-index property specifies the stack order of an element
+    (which element should be placed in front of, or behind, the others). An
+    element can have a positive or negative stack order: */
+    <h1>Aayush Sharma</h1>
+    <img src="https://picsum.photos/200" alt="photo" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in quae
+      ut fugiat rem quidem earum pariatur doloremque laborum eligendi. Beatae,
+      eveniet. Perferendis iusto perspiciatis magni ratione sit impedit
+      temporibus?
+    </p>
+
+    <hr />
+    <h1>Z-index Example</h1>
+    <div class="container">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <div class="box-3"></div>
+      <div class="box-4"></div>
+    </div>
+    <hr />
+
+
+  </body>
 </html>
