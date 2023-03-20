@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: blueviolet;
+        /* color: blue !important; */
+        font-size: xx-large;
+      }
+      .demo {
+        color: red;
+      }
+
+      #demo {
+        color: chartreuse;
+      }
+
+      .test {
+        color: tomato;
+      }
+
+      h1 {
+        background-color: yellow;
+      }
+      h1 {
+        background-color: red;
+      }
+
+      div#a {
+        background-color: green;
+      }
+      #a {
+        background-color: yellow;
+      }
+      div[id="a"] {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- What is Specificity?
+If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element. -->
+    <!-- the class selector is given higher priority: -->
+
+    <!-- 
+    There are four categories which define the specificity level of a selector:
+
+    Inline styles - Example: <h1 style="color: pink;">
+    IDs - Example: #navbar
+    Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+    Elements and pseudo-elements - Example: h1, ::before -->
+
+    <p class="demo">Lorem, ipsum dolor.</p>
+
+    <!-- the id selector is given higher priority: -->
+    <p id="demo" class="test">Hello World!</p>
+
+    <!-- the inline style is given the highest priority: -->
+    <p id="demo" class="test" style="color: pink">Hello World!</p>
+
+    <!-- If the same rule is written twice into the external style sheet, then the latest rule wins: -->
+    <h1>This is heading 1</h1>
+
+    <div id="a" style="background-color: burlywood">This is a div</div>
+    <!-- 
+    What is !important?
+The !important rule in CSS is used to add more importance to a property/value than normal. -->
+
+
+  </body>
+</html>

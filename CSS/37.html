@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --blue: #1e90ff;
+        --white: #ffffff;
+        --red: #ce4112;
+      }
+
+      body {
+        background-color: var(--red);
+      }
+
+      h2 {
+        border-bottom: 2px solid var(--blue);
+      }
+
+      .container {
+        color: var(--blue);
+        background-color: var(--white);
+        padding: 15px;
+      }
+
+      button {
+        background-color: aqua;
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        padding: 5px;
+      }
+
+      .div1 {
+        width: 300px;
+        height: 100px;
+        border: 2px solid rgb(12, 227, 15);
+      }
+
+      .div2 {
+        width: 300px;
+        height: 100px;
+        padding: 50px;
+        border: 4px solid rgb(81, 33, 192);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+        diam at erat pulvinar, at pulvinar felis blandit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+        diam at erat pulvinar, at pulvinar felis blandit.
+      </p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div>
+
+    <button type="button" onclick="myFunction_get()">
+      Get CSS Variable with JavaScript
+    </button>
+    <button type="button" onclick="myFunction_set()">
+      Change CSS Variable with JavaScript
+    </button>
+
+    <hr />
+
+    <div class="div1">
+      This div is smaller (width is 300px and height is 100px).
+    </div>
+    <br />
+    <div class="div2">
+      This div is bigger (width is also 300px and height is 100px).
+    </div>
+
+    <script>
+      var r = document.querySelector(":root");
+
+      function myFunction_get() {
+        var rs = getComputedStyle(r);
+        alert("The value of --blue is: " + rs.getPropertyValue("--blue"));
+      }
+
+      function myFunction_set() {
+        r.style.setProperty("--blue", "lightblue");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo element</title>
+    <style>
+      #one::first-line {
+        color: rgb(239, 49, 15);
+      }
+
+      #two::first-letter {
+        color: violet;
+        font-size: xx-large;
+      }
+
+      /* ::marker {
+        color: red;
+        font-size: 23px;
+      } */
+
+      img {
+        opacity: 0.5;
+      }
+
+      img:hover {
+        opacity: 1;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">NavBar</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <hr />
+    <h1 style="text-align: center">First Line</h1>
+    <p id="one">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laborum
+      omnis facilis incidunt non, fugiat odit asperiores consequuntur sed sequi.
+      Tenetur veniam eveniet tempore esse rem ratione perspiciatis quaerat
+      provident.
+    </p>
+    <hr />
+    <h1 style="text-align: center">First Letter</h1>
+    <p id="two">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laborum
+      omnis facilis incidunt non, fugiat odit asperiores consequuntur sed sequi.
+      Tenetur veniam eveniet tempore esse rem ratione perspiciatis quaerat
+      provident.
+    </p>
+    <hr />
+
+    <h1 style="text-align: center">CSS Marker</h1>
+
+    <!-- <div class="demo">
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+    </div> -->
+
+    <hr />
+    <h1 style="text-align: center">Optacity Example</h1>
+    <div class="container" style="text-align: center">
+      <img src="https://picsum.photos/300/300" />
+    </div>
+
+    <hr />
+  </body>
+</html>

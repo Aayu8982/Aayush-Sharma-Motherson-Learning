@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 0, 0, 0),
+          rgba(255, 0, 0, 1)
+        );
+      }
+      p.test1 {
+        width: 140px;
+        border: 1px solid #000000;
+        word-break: keep-all;
+      }
+
+      p.test2 {
+        width: 140px;
+        border: 1px solid #000000;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The word-break Property</h1>
+
+    <p class="test1">
+      This paragraph contains some text. This line will-break-at-hyphens.
+    </p>
+
+    <p class="test2">
+      This paragraph contains some text. The lines will break at any character.
+    </p>
+  </body>
+</html>
